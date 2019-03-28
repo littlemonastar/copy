@@ -79,3 +79,24 @@ li {
 	float: left;
 	list-style: none;
 }
+
+
+#div2 { /* Matches element with id=SimpleDiv */
+	background-color: black;
+
+	color: white;
+
+  margin: 5%;
+	border-style: solid groove;
+  border-width: 5px;
+	border-color: black;
+	padding: 6px;
+	color: #fff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, .5),
+               0 0 30px rgba(255, 255, 255, .5),
+               0 0 40px rgba(52, 152, 219, 1),
+               0 0 50px rgba(52, 152, 219, 1),
+               0 0 60px rgba(52, 152, 219, 1),
+               0 0 70px rgba(52, 152, 219, 1);
+
+}
