@@ -1,9 +1,12 @@
 let carX;
+let vroom;
 
 
 function setup(){
   createCanvas(500, 500);
-
+  vroom = new p5.Oscillator('square');
+  vroom.start();
+}
 
 // // draw race car wheel
 //
@@ -13,18 +16,14 @@ function setup(){
 //   ellipse(60, 350, 20, 20);
 //   ellipse(90, 350, 20, 20);
 
-    console.log('carX is ' + carX);
-    carX = 50;
-
-  }
-
 
 
   function draw(){
-    background(0, 255, 0, 80);
+    console.log(frameCount);
 
+    background(255, 255, 0, 80);
 
-
+    vroom.freq(carX);
 
 
   if (carX > 500){
@@ -38,7 +37,14 @@ function setup(){
 
   // draw race car body
     noStroke();
-    fill(40, 50, 220)
-    rect(carX, 300, 50, 30);
+    fill(0, 0, 0)
+    triangle(carX, 75, 58, 20, 86, 75);
 
+    fill(0);
+    ellipse(30, carX + 100, 30, 20);
+    quad(30, 31, carX + 30, carX + 100, carX + 45, 63, 30, 76);
+}
+
+function mousePressed(){
+  carX = 0;
 }
