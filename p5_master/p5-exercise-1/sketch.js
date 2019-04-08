@@ -1,16 +1,44 @@
 // Lives stream from class demo is here: https://youtu.be/vE6GQu9cQCE
 // final demo (but with competed racecar shape): https://art75.github.io/in-class-exercises/p5_master/p5-exercise-1/index.html
 
+   let button;
+   let helloButton;
 
-let carX = 50;
-let vroom;
+   let x = 0;
+   let exes = [];
+   let ex1 = {
+     name: 'bob',
+     age: 29,
+     rating: 4
+   }
+
+ function setup() {
+
+ button = createButton('create list of exes');
+ button.mousePressed(printExes);
+
+ helloButton = select('#hello');
+ helloButton.mousePressed(function(){
+  console.log('nameless function');
+})
+
+console.log()
 
 
-function setup() {
-  createCanvas(500, 500);
-  vroom = new p5.Oscillator('square');
-  vroom.start();
+ exes = ['bob','joe biden','henessey youngman'.'mona lisa']
+
+
+ for (let i = 0; i <= exes.length; i++){
+   createP(exes[i]);
+ }
+    console.log(i);
 }
+
+
+function printExes(){
+  createP(exes[2]);
+}
+
 
 function draw() {
   background(150, 50, 255, 80);
