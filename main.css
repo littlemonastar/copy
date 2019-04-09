@@ -1,11 +1,103 @@
 /* mainpage*/
 
+/*title*/
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+#container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.flux {
+  font-family: neon;
+	text-align: center;
+  color: #426DFB;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0vw 0vw 3vw #2356FF;
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  /* Firefox */
+  -webkit-animation: flux 2s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: flux 2s linear infinite;
+  /* Opera */
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0vw 0vw .5vw #082180, 0vw 0vw 1.5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+@-moz-keyframes flux
+/* Firefox */
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0vw 0vw .5vw #082180, 0vw 0vw 1.5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+@-webkit-keyframes flux
+/* Safari and Chrome */
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0vw 0vw .5vw #082180, 0vw 0vw 1.5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+@-o-keyframes flux
+/* Opera */
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0vw 0vw .5vw #082180, 0vw 0vw 1.5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+
+
 ul.menu1 {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	background-color: black;
+	font-family: 'Raleway', sans-serif;
+	background-color: #333399;
 }
 ul.menu1 li {
 	float: left;
@@ -18,7 +110,11 @@ ul.menu1 li a {
 	color: white;
 }
 ul.menu1 li a:hover:not(.active) {
-	background-color: #a9bce2;
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+
 }
 ul.menu1 li a.active {
 	background-color: #da3c41;
