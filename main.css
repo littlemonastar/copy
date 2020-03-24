@@ -1,13 +1,9 @@
 
+/* 線　*/
 hr{
   height: 5px;
   background-color: black;
   border: none;
-}
-
-
-body{
-  background-color: white;
 }
 
 .font{
@@ -15,10 +11,23 @@ body{
   font-family: monospace;
 }
 
-.menu{
-  width: 150px;
-  overflow-y: auto;
+* {
+  box-sizing: border-box;
 }
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 1300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 ul {
   list-style: none;
@@ -28,6 +37,12 @@ ul {
 /*list-style-type: none　--> Removes the bullets*/
 
 /*menuの箱*/
+
+.menu{
+  width: 150px;
+  overflow-y: auto;
+}
+
 .box {
     padding: 0em 0em;
     margin: 0em 0;
@@ -51,16 +66,16 @@ a {
 }
 
 a::after {
-position: absolute;
-top: 50%;
-right: .8em;
-content: '';
-margin-top: -5px;
-border: 7px solid transparent;
-border-top-width: 5px;
-border-bottom-width: 5px;
-border-left-color: black;
-opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: .8em;
+  content: '';
+  margin-top: -5px;
+  border: 7px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-color: black;
+  opacity: 0;
 }
 
 a:hover::after {
@@ -77,32 +92,14 @@ a:hover::after {
   }
 }
 
-/*statement page*/
-
-.box2 {
-    text-align: center;
-    float: left;
-    padding: 5em 5em;
-    margin: right;
-    border: double 10px black;
+.statement{
+  width: 150px;
+  overflow-y: auto;
 }
-
-#wp-main-side{
-  width: 920px;
-  margin: 0 auto;
-}
-
-#main {
-  width: 680px;
-  margin-bottom: 30px;
-  float: right;
-}
-
-
-
 
 
 body {
-  margin: right;
-
+  font-size: 15px;
+  font-family: monospace;
+  background-color: white;
 }
