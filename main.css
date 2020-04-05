@@ -99,3 +99,9 @@ body {
   font-family: monospace;
   background-color: white;
 }
+
+h1{
+	position: relative;
+	height: 50vh;
+  background: url(sakurajima.png) center / cover;
+}
