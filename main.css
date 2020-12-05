@@ -97,11 +97,12 @@ a:hover::after {
 body {
   font-size: 15px;
   font-family: monospace;
+  background: url(sakurajima.png) center / cover;
   background-color: white;
 }
 
 h1{
 	position: relative;
-	height: 50vh;
-  background: url(sakurajima.png) center / cover;
+	height: 3vh;
+
 }
