@@ -15,11 +15,12 @@ function preload(){
   img_ramen = loadImage("menu/ramen.png");
   img_pudding = loadImage("menu/pudding.png");
   img_salmonSushi = loadImage("menu/salmonSushi.png");
+  img_monatopia = loadImage("menu/monatopia.png");
 }
 
 function setup() {
   // createCanvas(windowWidth, windowHeight);
-  var cnv = createCanvas(700, 500);
+  var cnv = createCanvas(windowWidth, 500);
   var w = (windowWidth - width) / 2;
   var h = (windowHeight - height) / 2;
   cnv.position(w, h);
@@ -40,8 +41,8 @@ function draw() {
   fill(255);
   //noStroke();
   rect(95, 210, 500, 100)
+  image(img_monatopia, 135, 230);
   textFont('monospace');
-  fill(0);
+  fill("#594100");
   textSize(80);
-  text('Monatopia', 130, 280);
 }

@@ -3,16 +3,17 @@ html, body {
 }
 
 .header{
-  background-color: pink;
+  background-color: #f9fff0;
   padding: 10px;
 }
 
 .menu {
-  background-color: black;
+  background-color: white;
   border: 1px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-	color: #888888;
+  font-family: monospace;
+  /* box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055); */
+	color: #594100;
 	display: block;
 	margin: 1em 1%;
 	overflow: hidden;
@@ -24,9 +25,10 @@ html, body {
 }
 
 .menu > ul > li > a > .box {
-	border-top: 4px solid #aaaaaa;
+	border-top: 4px solid #000000;
 	border-right: 4px solid transparent;
 	border-left: 4px solid transparent;
+  font-family: monospace;
 	content: '';
 	display: inline-block;
 	height: 0;
@@ -36,23 +38,25 @@ html, body {
 	        transition: color 0.1s linear;
 }
 .menu > ul > li > a {
-	color: #aaaaaa;
+	color: #594100;
+  font-family: monospace;
 	display: block;
 	line-height: 56px;
 	padding: 0 10px;
 	text-decoration: none;
 }
 .menu > ul > li:hover {
-	background-color: rgb(218, 60, 65);
+	background-color: #b8a198;
 }
-.menu > ul > li:hover > a {
+/* .menu > ul > li:hover > a {
 	color: rgb( 255, 255, 255 );
-}
+} */
 .menu > ul > li:hover > a > .box {
 	border-top-color: rgb( 255, 255, 255 );
 }
 .menu > ul > li > div {
-	background-color: rgb(218, 60, 65);
+	background-color: white;
+  color: #594100;
 	border-top: 0;
 	border-radius: 0 0 4px 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -74,13 +78,13 @@ html, body {
 	display: block;
 }
 .menu > ul > li > div ul > li > a {
-	color: #ffffff;
+	color: #594100;
 	display: block;
 	padding: 12px 24px;
 	text-decoration: none;
 }
 .menu > ul > li > div ul > li:hover > a {
-	background-color: rgba( 255, 255, 255, 0.1);
+	background-color: #fafafa;
 }
 
 .menu ul li {
@@ -97,8 +101,8 @@ canvas {
 }
 
 
-
+/*
 footer{
   background-color: pink;
   padding: 10px;
-}
+} */
