@@ -15,7 +15,7 @@ function preload(){
   img_ramen = loadImage("menu/ramen.png");
   img_pudding = loadImage("menu/pudding.png");
   img_salmonSushi = loadImage("menu/salmonSushi.png");
-  img_monatopia = loadImage("menu/monatopia.png");
+  img_mocatopia = loadImage("menu/mocatopia.png");
 }
 
 function setup() {
@@ -41,7 +41,7 @@ function draw() {
   fill(255);
   //noStroke();
   rect(95, 210, 500, 100)
-  image(img_monatopia, 135, 230);
+  image(img_mocatopia, 135, 230);
   textFont('monospace');
   fill("#594100");
   textSize(80);
