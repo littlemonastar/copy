@@ -1,0 +1,20 @@
+{
+  "name": "lms",
+  "version": "1.0.0",
+  "description": "／⌒ヽ   ⊂二二二（　＾ω＾）二⊃   　　　　　|　　　 / 　　　　　　ﾌﾞｰﾝ   　　 　　 （　ヽノ   　　　　　　 ﾉ>ノ   　　 三　　レﾚ",
+  "main": "menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlemonastar/littlemonastar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littlemonastar/littlemonastar/issues"
+  },
+  "homepage": "https://github.com/littlemonastar/littlemonastar#readme"
+}
